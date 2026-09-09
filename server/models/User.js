@@ -13,6 +13,11 @@ const userSchema = new mongoose.Schema({
     required: true
   },
 
+  field: {
+    type: String,
+    default: ''
+  },
+
   createdAt: {
     type: Date,
     default: Date.now
